@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+svg {
+  width: 650px;
+  height: 650px;
+}
+
+#leftarm,
+#rightarm,
+#body {
+  animation: anim2 ease 0.4s infinite alternate;
+  transform-origin: center;
+}
+
+#leftleg {
+  animation: anim2 ease 0.4s infinite alternate;
+}
+#Vector_10 {
+  animation: anim1 ease 0.4s infinite alternate;
+}
+
+#shorts,
+#Vector_8 {
+  animation: anim2 ease 0.4s infinite alternate;
+  transform-origin: top;
+}
+#ball {
+  animation: anim3 ease 0.42s infinite alternate;
+}
+
+@keyframes anim1 {
+  from {
+    transform: rotateX(15deg);
+  }
+  to {
+    transform: rotateX(19deg);
+  }
+}
+
+@keyframes anim2 {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes anim3 {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(33deg);
+  }
+}
